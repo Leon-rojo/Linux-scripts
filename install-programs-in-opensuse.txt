@@ -1,0 +1,50 @@
+ 
+https://opensuse-guide.org/installpackage.php
+
+
+<<---zypper search thunder
+
+
+<<---zypper install MozillaThunderbird
+
+--------------------
+10.3 Package Management in the Terminal
+If you wish, you can install and remove packages via a terminal too.
+
+To search for a package run zypper search [search term]. Example:
+<<---zypper search thunder
+
+To install a package run zypper install [package name]. Example:
+<<---zypper install MozillaThunderbird
+
+To remove a package run zypper remove [package name]. Example:
+<<---zypper remove PackageKit
+
+See man zypper for more.
+man zypper
+
+Or for help on indvidual commands use for example:
+zypper install --help
+
+10.3.1 Using 1-click in the Terminal
+You can actually use 1-click installation in the terminal too, the syntax is OCICLI [URL], Example:
+<<---OCICLI http://opensuse-community.org/nvidia.ymp
+
+10.3.2 Manually downloaded RPM file
+To install a manually downloaded RPM file, run:
+<<---zypper install /path/to/manually/downloaded.rpm
+
+10.3.3 RPM Queries
+You can get a lot of useful information about installed packages from the RPM database very easily.
+
+Check which version is installed. Example:
+rpm -q MozillaFirefox
+
+List the files which are installed by a package, and where. Example:
+rpm -ql amarok
+
+Find out which package a certain file belongs to. Example:
+rpm -qf /usr/bin/firefox
+
+Get various information about a package, including changelog. Example:
+rpm -qi --changelog MozillaFirefox

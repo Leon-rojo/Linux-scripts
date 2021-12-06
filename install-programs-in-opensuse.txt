@@ -1,7 +1,7 @@
  
 https://opensuse-guide.org/installpackage.php
 
-
+--
 <<---zypper search thunder
 
 

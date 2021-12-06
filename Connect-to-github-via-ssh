@@ -1,0 +1,28 @@
+1 Create or check if you alaready have one SSH key in your linux system
+https://docs.github.com/es/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+
+ls -la ~/.ssh
+
+in the outcome identify the file .pub corresponding with your public key.
+
+
+Then copy the key in your keyboard from this outcome
+
+cat ~/.ssh/id_yourSSH.pub
+
+
+Adding your ssh publick key in your github account.
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+From your git Account on the right top Profile / Setting / SSH and GPG keys / New SSH key paste your Public ssh key.
+Check your connection from your linux konsole 
+
+$>> ssh -T git@github.com
+
+check that the digital finger print from the outcome shwon is one of the ownded by github and press (yes)
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+
+a sucessful connection will show the following message
+
+> Hi username! You've successfully authenticated, but GitHub does not
+> provide shell access.

@@ -1,0 +1,31 @@
+Check you you arlready have one pair in your linux syste.
+ 
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they ex
+
+if not pair if public and private key exist then
+
+$ ssh-keygen
+Enter file in which to save the key (/home/your_user/.ssh/id_rsa): <Enter>
+Enter passphrase (empty for no passphrase): <Enter>
+Enter same passphrase again: <Enter>
+Your identification has been saved..
+
+
+-----
+
+Add your public key into the Git Repo
+
+identify the new public key generated 
+ls -al ~/.ssh
+
+and copy to the clipboard the public one
+
+cat ~/.ssh/id_rsa.pub
+
+
+Open your repo URL and find your profile / Setting SSH and add it
+
+The steps are in the following link
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+

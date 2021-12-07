@@ -1,0 +1,14 @@
+ 
+Test ssh key connection
+
+ssh -T git@github.com
+
+after this connections is success (if not then you need to configurate your private and prublic key and paste the public one into your github profile)
+
+git remote add origin ssh://git@github.com:UserName//RepositoryName.git
+
+git push -u origin master
+
+
+After this point the files are uploaded to the github repo in the Master.
+Code / top left side
